@@ -32,7 +32,7 @@ class ProductTable extends Component {
         )
 
         return (
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <table class="table table-sm table-striped">
                     <thead class="thead-dark">
                         <tr>

@@ -17,7 +17,7 @@ class Filters extends Component {
 
     render() {
         return (
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <form>
                     <input type="text" class="col-md-12" placeholder="Search..." name="filterText" onChange= {this.handleChange}/><br/><br/>
                 </form>

@@ -50,7 +50,7 @@ let PRODUCTS = {
     render() {
         return (
             <div class="container-fluid">
-                <h1 class="col-md-5">My Inventory</h1><br/>
+                <h1 class="col-md-4">My Inventory</h1><br/>
                 <Filters onFilter={this.handleFilter}/>
                 <ProductTable products={this.state.products} filterText={this.state.filterText} onDestroy={this.handleDestroy}/>
                 <ProductForm onSave={this.handleSave}/>

@@ -32,15 +32,15 @@ class ProductForm extends Component {
 
     render() {
         return (
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <h3>Add a new product</h3>
                 <form>
                     Name<br/>
-                    <input type="text" onChange={this.handleChange} value={this.state.product.name}/><br/><br/>
+                    <input type="text" name="name" onChange={this.handleChange} value={this.state.product.name}/><br/><br/>
                     Category<br/>
-                    <input onChange={this.handleChange} value={this.state.product.category}/><br/><br/>
+                    <input type="text" name="category" onChange={this.handleChange} value={this.state.product.category}/><br/><br/>
                     Price<br/>
-                    <input onChange={this.handleChange} value={this.state.product.price}/><br/><br/>
+                    <input type="text" name="price" onChange={this.handleChange} value={this.state.product.price}/><br/><br/>
                     <button type="button" class="btn btn-primary" value="Save" onClick={this.handleSave}>Save</button>
                 </form>
             </div>
