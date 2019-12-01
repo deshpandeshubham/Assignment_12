@@ -10,14 +10,14 @@ let PRODUCTS = {
     '4': {id: 4, category: 'Furniture', price: '$799', name: 'Chaise Lounge'},
     '5': {id: 5, category: 'Kitchen', price: '$800', name: 'Dining Table'},
     '6': {id: 6, category: 'Music', price: '$100', name: 'Drum Kit'}
- }
+}
 
- class Product extends Component {
+class Product extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
-          filterText: "",
-          products: PRODUCTS
+            filterText: "",
+            products: PRODUCTS
         }
         this.handleFilter= this.handleFilter.bind(this)
         this.handleSave = this.handleSave.bind(this)
@@ -30,12 +30,12 @@ let PRODUCTS = {
 
     handleSave(product) {
         if(!product.id) {
-             product.id = new Date().getTime()
+                product.id = new Date().getTime()
         }
         this.setState((prevState) => {
-             let products = prevState.products
-             products[product.id] = product
-             return {products}
+                let products = prevState.products
+                products[product.id] = product
+                return {products}
         });
     }
 
